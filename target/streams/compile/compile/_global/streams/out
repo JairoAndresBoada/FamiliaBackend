@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\ProyectoAYVRegional\Componentes\Familia\src\main\scala\Main.scala:30:26: not found: value rutasFamilia[0m
+[0m[[0m[31merror[0m] [0m[0m    Http().bindAndHandle(rutasFamilia, contextoFamilia.config.http.host, contextoFamilia.config.http.port)(materializer)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
