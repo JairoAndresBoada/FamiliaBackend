@@ -2,20 +2,18 @@ package com.familia.flujo.infraestructura.configuracion
 
 import cats.data.Reader
 import com.familia.UUID.generarUUID
-import com.familia.flujo.CorrelationId
+import com.familia.flujo.logFamilia.{CorrelationId, LogFamilia}
 import com.typesafe.config.ConfigFactory
 import monix.eval.Task
 import reactivemongo.api.{DefaultDB, MongoConnection, MongoDriver}
 
 import scala.concurrent.Future
 
-
-
 class ConexionReactivMongo(config: ConfiguracionFamiliares) {
 
   val driver = new MongoDriver(Some(ConfigFactory.load()))
 
-  val conexionEstablecida = establecerConexion().run(config).memoizeOnSuccess
+  val conexionEstablecida: Task[DefaultDB] = establecerConexion().run(config).memoizeOnSuccess
 
   private def establecerConexion(): Reader[ConfiguracionFamiliares, Task[DefaultDB]] = Reader {
     case config: ConfiguracionFamiliares =>
@@ -30,6 +28,7 @@ class ConexionReactivMongo(config: ConfiguracionFamiliares) {
                                  url: String
                                )(implicit cid: CorrelationId): Reader[ConfiguracionFamiliares, Task[DefaultDB]] = Reader {
     case config: ConfiguracionFamiliares =>
+      LogFamilia.logInfo(s"la url que esta llegando es ${url}" , getClass)
       Task
         .deferFutureAction { implicit scheduler =>
           val parsedUri        = MongoConnection.parseURI(url)

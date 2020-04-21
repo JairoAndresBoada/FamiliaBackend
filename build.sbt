@@ -1,3 +1,4 @@
+
 name := "Familia"
 
 version := "0.1"
@@ -17,9 +18,11 @@ val circeVersion         = "0.11.1"
 val monixVersion         = "3.0.0-RC1"
 val pureConfigVersion    = "0.10.2"
 val logBackVersion       = "1.2.3"
-val mongoVersion         = "0.16.5"
+val mongoVersion         = "0.17.1"
 val Json4sVersion        = "3.6.5"
 val quicklensVersion     = "1.4.11"
+val jodaTimeVersion      = "2.10.1"
+val scalaLogging          = "3.9.2"
 
 val exclusionAkka      = ExclusionRule("com.typesafe.akka")
 val exclusionTypelevel = ExclusionRule("org.typelevel")
@@ -43,5 +46,9 @@ lazy val mainLibs =
     "com.github.pureconfig"         %% "pureconfig-enumeratum" % pureConfigVersion,
     "ch.qos.logback"                % "logback-classic"        % logBackVersion,
     "org.reactivemongo"             %% "reactivemongo"         % mongoVersion excludeAll exclusionAkka,
-    "com.softwaremill.quicklens"    %% "quicklens"             % quicklensVersion
+    "com.softwaremill.quicklens"    %% "quicklens"             % quicklensVersion,
+    "joda-time"                     %  "joda-time"               % jodaTimeVersion,
+    "com.typesafe.scala-logging" %% "scala-logging"         % scalaLogging,
+
+
   )

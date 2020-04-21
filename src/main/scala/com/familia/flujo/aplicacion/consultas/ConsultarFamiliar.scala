@@ -1,13 +1,14 @@
 package com.familia.flujo.aplicacion.consultas
 
-import cats.data.{EitherT, Reader}
+import cats.data.Reader
 import com.familia.flujo.Familia.ReaderTecnico
-import com.familia.flujo.{Consulta, ContextoFamilia, CorrelationId}
-import monix.eval.Task
+import com.familia.flujo.dominio.Persona
+import com.familia.flujo.logFamilia.CorrelationId
+import com.familia.flujo.{Consulta, ContextoFamilia}
 
-case class ConsultarFamiliar(idFamiliar : String) extends Consulta[String]{
-  override def ejecutarConsulta()(implicit correlationId: CorrelationId): ReaderTecnico[String] = Reader{
+case class ConsultarFamiliar(idFamiliar : String) extends Consulta[Option[Persona]]{
+  override def ejecutarConsulta()(implicit correlationId: CorrelationId): ReaderTecnico[Option[Persona]] = Reader{
     case contexto : ContextoFamilia =>
-      EitherT.right(Task.now(s"Hola $idFamiliar"))
+      contexto.repoFamilia.consultarFamiliar(idFamiliar).run(contexto)
   }
 }

@@ -4,6 +4,8 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 import com.familia.flujo.infraestructura.configuracion.{ConexionReactivMongo, ConfiguracionFamiliares, DefaultConfig, HttpServer}
+import com.familia.flujo.infraestructura.persistencia.{RepoFamilia, RepoFamiliaMongo}
+import com.familia.flujo.logFamilia.CorrelationId
 import monix.execution.Scheduler
 
 import scala.concurrent.Future
@@ -21,13 +23,10 @@ object Main extends App with HttpServer{
   val appConfig: ConfiguracionFamiliares = DefaultConfig.familiaConfig
 
   override val contextoFamilia: ContextoFamilia = new ContextoFamilia {
-    override def conexionABD: ConexionReactivMongo = new ConexionReactivMongo(appConfig)
+    override val conexionABD: ConexionReactivMongo = new ConexionReactivMongo(appConfig)
     override val config: ConfiguracionFamiliares = appConfig
+    override val repoFamilia: RepoFamilia = RepoFamiliaMongo
   }
-
-  val conexionDB = new ConexionReactivMongo(appConfig)
-
-  println(s"la conexion a la base de datos es ${conexionDB}")
 
   val httpServer: Future[Http.ServerBinding] =
   Http().bindAndHandle(rutasFamilia, "localhost", contextoFamilia.config.http.port)(materializer)

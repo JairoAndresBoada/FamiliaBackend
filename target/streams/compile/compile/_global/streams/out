@@ -1,5 +1,6 @@
-[0m[[0m[33mwarn[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\configuracion\ConexionReactivMongo.scala:54:5: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\configuracion\ConexionReactivMongo.scala:53:5: match may not be exhaustive.[0m
 [0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: (Left(_), Left(_), Right(_)), (Left(_), Right(_), Left(_)), (Left(_), Right(_), Right(_)), (Right(_), Left(_), Left(_)), (Right(_), Left(_), Right(_)), (Right(_), Right(_), Left(_))[0m
 [0m[[0m[33mwarn[0m] [0m[0m    ([0m
 [0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning (since 0.17.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

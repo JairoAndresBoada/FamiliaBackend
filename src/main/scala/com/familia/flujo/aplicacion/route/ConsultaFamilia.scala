@@ -3,11 +3,14 @@ package com.familia.flujo.aplicacion.route
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Route
 import com.familia.UUID.generarUUID
-import com.familia.flujo.CorrelationId
 import com.familia.flujo.Familia.EitherTask
 import com.familia.flujo.aplicacion.consultas.ConsultarFamiliar
+import com.familia.flujo.dominio.Persona
 import com.familia.flujo.infraestructura.configuracion.HttpRoute
+import com.familia.flujo.logFamilia.CorrelationId
 import de.heikoseeberger.akkahttpcirce.ErrorAccumulatingCirceSupport
+import io.circe.generic.auto._
+
 
 import scala.util.{Failure, Success}
 
@@ -25,7 +28,7 @@ trait ConsultaFamilia extends ErrorAccumulatingCirceSupport with HttpRoute {
     }
   }
   private def manejarRespuestaConsulta(
-                                        respuesta: EitherTask[String]
+                                          respuesta: EitherTask[Option[Persona]]
                                       )(implicit correlationId: CorrelationId): Route = {
     onComplete(respuesta.value.runAsync) {
       _ match {
