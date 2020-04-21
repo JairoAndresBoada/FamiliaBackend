@@ -20,23 +20,24 @@ object Main extends App with HttpServer{
 
   val appConfig: ConfiguracionFamiliares = DefaultConfig.familiaConfig
 
-
   override val contextoFamilia: ContextoFamilia = new ContextoFamilia {
+    override def conexionABD: ConexionReactivMongo = new ConexionReactivMongo(appConfig)
     override val config: ConfiguracionFamiliares = appConfig
-
-    override def conexionABD: ConexionReactivMongo = new ConexionReactivMongo()
   }
 
+  val conexionDB = new ConexionReactivMongo(appConfig)
 
-val httpServer: Future[Http.ServerBinding] =
-Http().bindAndHandle(rutasFamilia, "localhost", contextoFamilia.config.http.port)(materializer)
+  println(s"la conexion a la base de datos es ${conexionDB}")
 
-httpServer.onComplete {
-  case Success(Http.ServerBinding(localAddress)) =>
-  println(s"Http iniciado  - Escuchando para HTTP en $localAddress", getClass)
-  case Failure(exception) =>
-  println(s"Error al iniciar servicio HTTP ", Some(exception), getClass)
-}
+  val httpServer: Future[Http.ServerBinding] =
+  Http().bindAndHandle(rutasFamilia, "localhost", contextoFamilia.config.http.port)(materializer)
+
+  httpServer.onComplete {
+    case Success(Http.ServerBinding(localAddress)) =>
+    println(s"Http iniciado  - Escuchando para HTTP en $localAddress", getClass)
+    case Failure(exception) =>
+    println(s"Error al iniciar servicio HTTP ", Some(exception), getClass)
+  }
 
 }
 

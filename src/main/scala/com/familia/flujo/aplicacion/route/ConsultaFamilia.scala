@@ -8,7 +8,6 @@ import com.familia.flujo.Familia.EitherTask
 import com.familia.flujo.aplicacion.consultas.ConsultarFamiliar
 import com.familia.flujo.infraestructura.configuracion.HttpRoute
 import de.heikoseeberger.akkahttpcirce.ErrorAccumulatingCirceSupport
-import io.circe.generic.auto._
 
 import scala.util.{Failure, Success}
 

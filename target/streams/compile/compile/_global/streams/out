@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0mC:\ProyectoAYVRegional\Componentes\Familia\src\main\scala\Main.scala:30:26: not found: value rutasFamilia[0m
-[0m[[0m[31merror[0m] [0m[0m    Http().bindAndHandle(rutasFamilia, contextoFamilia.config.http.host, contextoFamilia.config.http.port)(materializer)[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\configuracion\ConexionReactivMongo.scala:54:5: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: (Left(_), Left(_), Right(_)), (Left(_), Right(_), Left(_)), (Left(_), Right(_), Right(_)), (Right(_), Left(_), Left(_)), (Right(_), Left(_), Right(_)), (Right(_), Right(_), Left(_))[0m
+[0m[[0m[33mwarn[0m] [0m[0m    ([0m
+[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

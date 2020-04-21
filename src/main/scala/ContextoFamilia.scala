@@ -5,8 +5,8 @@ import com.familia.flujo.infraestructura.configuracion.{ConexionReactivMongo, Co
 
 trait ContextoFamilia {
 
-  def config: ConfiguracionFamiliares
-
   def conexionABD: ConexionReactivMongo
+
+  def config: ConfiguracionFamiliares
 
 }
