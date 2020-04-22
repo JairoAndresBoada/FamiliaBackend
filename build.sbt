@@ -7,8 +7,6 @@ scalaVersion := "2.12.6"
 
 libraryDependencies ++= mainLibs
 
-
-
 val akkaVersion          = "2.5.21"
 val akkaHttpCirceVersion = "1.24.3"
 val akkaHttpVersion      = "10.1.7"

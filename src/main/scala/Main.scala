@@ -5,7 +5,7 @@ import akka.http.scaladsl.Http
 import akka.stream.ActorMaterializer
 import com.familia.flujo.infraestructura.configuracion.{ConexionReactivMongo, ConfiguracionFamiliares, DefaultConfig, HttpServer}
 import com.familia.flujo.infraestructura.persistencia.{RepoFamilia, RepoFamiliaMongo}
-import com.familia.flujo.logFamilia.CorrelationId
+import com.familia.flujo.logFamilia.{CorrelationId, LogFamilia}
 import monix.execution.Scheduler
 
 import scala.concurrent.Future
@@ -33,9 +33,9 @@ object Main extends App with HttpServer{
 
   httpServer.onComplete {
     case Success(Http.ServerBinding(localAddress)) =>
-    println(s"Http iniciado  - Escuchando para HTTP en $localAddress", getClass)
+    LogFamilia.logInfo(s"Http iniciado  - Escuchando para HTTP en $localAddress", getClass)
     case Failure(exception) =>
-    println(s"Error al iniciar servicio HTTP ", Some(exception), getClass)
+    LogFamilia.logError(s"Error al iniciar servicio HTTP ", Some(exception), getClass)
   }
 
 }

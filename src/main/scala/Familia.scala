@@ -12,7 +12,7 @@ package object Familia {
 
   type ReaderTecnico[A] = Reader[ContextoFamilia, EitherTask[A]]
 
-  type ID = String
+  type ID = Int
 
   type ErrorOr[A] = EitherT[Task, ErrorFamilia, A]
 

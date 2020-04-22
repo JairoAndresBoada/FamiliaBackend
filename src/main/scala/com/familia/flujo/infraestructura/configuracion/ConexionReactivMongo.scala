@@ -49,14 +49,16 @@ class ConexionReactivMongo(config: ConfiguracionFamiliares) {
   }
 
 
-  private def generarURLConexion(config: ConfiguracionFamiliares): Either[String,String] = {
+  private def generarURLConexion(config: ConfiguracionFamiliares)(implicit correlationId: CorrelationId): Either[String,String] = {
     (
       datosParaLogeo(config),
       datosHosts(config),
       datosBD(config)
     ) match {
       case (Right(logeo), Right(host), Right(db)) =>  Right(s"mongodb://${logeo}${host}/${db}${config.persistencia.adicionales}")
-      case (Left(_), Left(_) ,Left(_) ) => Left("ocurrio un error conectandose a las base de datos")
+      case (Left(errorLogeo), Left(_) ,Left(_) ) =>
+        LogFamilia.logError("error generando la url" , None ,getClass)
+        Left("ocurrio un error conectandose a las base de datos")
     }
   }
 

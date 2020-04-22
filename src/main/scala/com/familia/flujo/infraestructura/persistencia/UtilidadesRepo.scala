@@ -1,6 +1,6 @@
 package com.familia.flujo.infraestructura.persistencia
 
-import com.familia.flujo.logFamilia.CorrelationId
+import com.familia.flujo.logFamilia.{CorrelationId, LogFamilia}
 import io.circe.{Decoder, DecodingFailure, Json}
 import reactivemongo.bson.BSONDocument
 import com.familia.flujo.logFamilia.LogFamilia._
@@ -19,10 +19,13 @@ trait UtilidadesRepo {
 
   def bsonDocumentoAJson(bsonDocumento: BSONDocument)(
     implicit correlationId: CorrelationId
-  ) =
+  ): Option[Json] ={
+    LogFamilia.logInfo("ingreso por bsonDocumentoAJson" , getClass)
     ManejoBson
       .bsonToJson(bsonDocumento)
       .fold(controlarErrorTransformacionAJson, controlarExitoTransformacionAJson)
+  }
+
 
   private def controlarErrorTransformacionJsonToA[A](implicit correlationId: CorrelationId) =
     (error: DecodingFailure) => {

@@ -2,109 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcca3e97-35dc-4651-bb15-0f28b73dc4cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__joda_time_joda_time_2_10_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/ManejoBson.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamilia.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/documentos/NombreColeccion.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/package.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/FabricaMensaje.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/INFO.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/LogFamilia.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/MensajeLog.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_2_12_0_16_5_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_bson_2_12_0_16_5_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_bson_macros_2_12_0_16_5_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_shaded_0_16_5_jar.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliares.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/consultaFamiliares.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__commons_codec_commons_codec_1_11_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__dnsjava_dnsjava_2_1_8_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_2_12_0_17_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_bson_2_12_0_17_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_bson_macros_2_12_0_17_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__org_reactivemongo_reactivemongo_shaded_0_17_1_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/Familia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Familia.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$511eaa49d5ed1d977bf3$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$511eaa49d5ed1d977bf3.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$511eaa49d5ed1d977bf3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$75fd81d41d66cb85151b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$75fd81d41d66cb85151b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$75fd81d41d66cb85151b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9af3292211930a008825$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9af3292211930a008825.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9af3292211930a008825.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a19ac565cf93ca8073e1$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a19ac565cf93ca8073e1.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a19ac565cf93ca8073e1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b05a9c10331caead47a5$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b05a9c10331caead47a5.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$b05a9c10331caead47a5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$09cc2b15e3e8ca954ac2$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$09cc2b15e3e8ca954ac2$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$23d68f4b41609e5c8303$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$23d68f4b41609e5c8303$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$bf06a989da1695d0f1ab$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$bf06a989da1695d0f1ab$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c74e5d6fe164a54df077$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$c74e5d6fe164a54df077$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e4d69cfb8dc8d3bb37f9$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$e4d69cfb8dc8d3bb37f9$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ContextoFamilia.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ContextoFamilia.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Familia.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Familia.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/Recursos.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/Recursos.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Comando.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Comando.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Consulta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Consulta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/ContextoFamilia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/ContextoFamilia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/CorrelationId$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/CorrelationId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Familia/package$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Familia/package$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Familia/package.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Familia/package.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$$anon$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main$delayedInit$body.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$anon$macro$109$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1$anon$macro$121$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia$anon$importedEncoder$macro$133$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/aplicacion/route/ConsultaFamilia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/dominio/Persona$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/dominio/Persona$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/dominio/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/dominio/Persona.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$$anon$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$103$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$105$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$13$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$16$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$28$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$34$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$51$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$65$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$77$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$83$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1$anon$macro$89$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/DefaultConfig$anon$exportedReader$macro$127$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/Recursos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/configuracion/Recursos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$anon$macro$279$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1$anon$macro$291$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$303$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$$anon$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$$anon$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$$anon$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$anon$macro$321$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1$anon$macro$333$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain$anon$lazy$macro$345$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamilia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamilia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/familia_2.12-0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/familia_2.12-0.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/inputs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/fullClasspathAsJars/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -122,55 +97,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
-              <folding>
-                <element signature="e#57#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/package.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="189">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="59" />
               <folding>
-                <element signature="e#43#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#27#56#0" expanded="true" />
+                <element signature="e#44#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,8 +129,15 @@
       <find>contextoSel.conexionABD.conexionEstablecida</find>
       <find>conex</find>
       <find>MongoConnection.parseURI</find>
-      <find>mongo</find>
       <find>manejarConexionBD</find>
+      <find>mongo</find>
+      <find>Log</find>
+      <find>adicionales</find>
+      <find>se pres</find>
+      <find>.collec</find>
+      <find>op</find>
+      <find>reactiv</find>
+      <find>Persona</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,35 +148,38 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/HttpsClientConfig.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/constantes/Contantes.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ContextoFamilia.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/documentos/NombreColeccion.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/ManejoBson.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/INFO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/MensajeLog.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/FabricaMensaje.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/LogFamilia.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamilia.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoProspectoMongo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Familia.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/package.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/Main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Familia.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/Recursos.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/ManejoBson.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamilia.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/consultaFamiliares.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliares.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -252,51 +195,6 @@
               <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
               <item name="Familia" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="flujo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="flujo" type="462c0819:PsiDirectoryNode" />
-              <item name="infraestructura" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Familia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Familia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="flujo" type="462c0819:PsiDirectoryNode" />
-              <item name="infraestructura" type="462c0819:PsiDirectoryNode" />
-              <item name="persistencia" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -305,7 +203,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587507248233" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587584696857" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -386,9 +284,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3494705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -402,11 +299,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.45008183" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924356" weight="0.57610476" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.797054" />
       <window_info anchor="bottom" id="SBT Execute" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -447,30 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="e#35#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/documentos/NombreColeccion.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/INFO.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -492,106 +365,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#56#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/FabricaMensaje.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/ManejoBson.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="e#56#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamilia.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="e#56#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.11.1/circe-generic_2.12-0.11.1-sources.jar!/io/circe/generic/semiauto.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="22" selection-start-line="22" selection-end-line="23" />
-          <folding>
-            <element signature="e#56#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/LogFamilia.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding>
             <element signature="e#38#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#48#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Familia.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="e#27#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <element signature="e#44#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-          <folding>
-            <element signature="e#55#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,40 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#27#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/HttpsClientConfig.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/package.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#43#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/monix/monix-eval_2.12/3.0.0-RC1/monix-eval_2.12-3.0.0-RC1-sources.jar!/monix/eval/Task.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -647,20 +392,248 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.12/10.1.7/akka-http_2.12-10.1.7-sources.jar!/akka/http/scaladsl/server/directives/RouteDirectives.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/ConexionReactivMongo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+        <state relative-caret-position="167">
+          <caret line="57" column="117" selection-start-line="57" selection-start-column="115" selection-end-line="57" selection-end-column="126" />
           <folding>
             <element signature="e#57#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/HttpsClientConfig.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-bson_2.12/0.17.1/reactivemongo-bson_2.12-0.17.1-sources.jar!/types.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="931" column="11" selection-start-line="931" selection-start-column="11" selection-end-line="931" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/logFamilia/FabricaMensaje.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#27#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliar.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#48#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/HttpRoute.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/configuracion/Recursos.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/circe/circe-generic_2.12/0.11.1/circe-generic_2.12-0.11.1-sources.jar!/io/circe/generic/semiauto.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/DecoderEncoderDomain.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <element signature="e#56#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/circe/circe-core_2.12/0.11.1/circe-core_2.12-0.11.1-sources.jar!/io/circe/Json.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo-bson_2.12/0.17.1/reactivemongo-bson_2.12-0.17.1.jar!/reactivemongo/bson/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/ManejoBson.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#56#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/io/circe/circe-bson_2.12/0.3.1/circe-bson_2.12-0.3.1-sources.jar!/io/circe/bson/BsonCodecInstances.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/UtilidadesRepo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#56#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/documentos/NombreColeccion.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="e#43#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/reactivemongo/reactivemongo_2.12/0.17.1/reactivemongo_2.12-0.17.1-sources.jar!/api/collections/GenericQueryBuilder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Familia.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#27#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/dominio/Persona.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#35#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/consultaFamiliares.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <folding>
+            <element signature="e#44#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/consultas/ConsultarFamiliares.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="e#49#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamilia.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="e#56#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/infraestructura/persistencia/RepoFamiliaMongo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="e#55#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/familia/flujo/aplicacion/route/ConsultaFamilia.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="e#44#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
