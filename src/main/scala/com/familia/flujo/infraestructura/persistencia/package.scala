@@ -12,17 +12,17 @@ package object persistencia {
   type ReaderPersistencia[A] = Reader[ContextoFamilia, EitherTask[A]]
 
   def darColeccion(nombreColeccion: NombreColeccion): Reader[ContextoFamilia, Task[BSONCollection]] = Reader {
-    case contextoSel: ContextoFamilia=>
-      contextoSel.conexionABD.conexionEstablecida
+    case contexto: ContextoFamilia=>
+      contexto.conexionABD.conexionEstablecida
         .map(_.collection[BSONCollection](nombreColeccion.nombreColeccion))
   }
 
   def ejecutarConsulta[A](nombreColeccion: NombreColeccion)(f: funcionConsulta[A]): ReaderPersistencia[A] =
     Reader {
-      case contextoSel: ContextoFamilia=>
+      case contexto: ContextoFamilia=>
         EitherT(
           darColeccion(nombreColeccion)
-            .run(contextoSel)
+            .run(contexto)
             .flatMap(f(_).value)
         )
     }
