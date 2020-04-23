@@ -18,11 +18,11 @@ trait ConsultaFamilia extends ErrorAccumulatingCirceSupport with HttpRoute {
   lazy val rutasConcultaFamilia: Route = consultarFamiliar
 
   lazy val consultarFamiliar : Route = {
-    pathPrefix("familia" / Segment) { idFamiliar =>
+    pathPrefix("familiar" / Segment) { idFamiliar =>
       get {
         implicit val correlationId: CorrelationId = CorrelationId(s"consultar Familiar $generarUUID")
         println("Se va a consulta el Familiar", getClass)
-        manejarRespuestaConsulta(ConsultarFamiliar(idFamiliar.toInt).ejecutarConsulta().run(contextoFamilia))
+        manejarRespuestaConsulta(ConsultarFamiliar(idFamiliar).ejecutarConsulta().run(contextoFamilia))
       }
     }
   }

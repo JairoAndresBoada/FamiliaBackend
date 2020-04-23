@@ -5,7 +5,7 @@ import reactivemongo.bson.Macros
 
 
 case class Persona (
-                   idPersona : ID,
+                   _id : Option[ID],
                    nombres: String,
                    apellidos : String,
                    fechaNacimiento: String,

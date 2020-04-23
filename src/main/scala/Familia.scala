@@ -1,10 +1,9 @@
 package com.familia.flujo
 
 import cats.data.{EitherT, Reader}
-import com.familia.flujo.Familia.{EitherTask, ReaderTecnico}
+import com.familia.flujo.Familia.ReaderTecnico
 import com.familia.flujo.logFamilia.CorrelationId
 import monix.eval.Task
-import org.slf4j.MDC
 
 package object Familia {
 
@@ -12,7 +11,7 @@ package object Familia {
 
   type ReaderTecnico[A] = Reader[ContextoFamilia, EitherTask[A]]
 
-  type ID = Int
+  type ID = String
 
   type ErrorOr[A] = EitherT[Task, ErrorFamilia, A]
 
@@ -23,6 +22,10 @@ package object Familia {
 trait ErrorFamilia {
   def nombre: String
 }
+
+case class ErrorInterno(
+                         override val nombre: String = "Se ha producido un error en el servicio."
+                       ) extends ErrorFamilia
 
 case class ErrorAlGenerarBSON(nombre : String) extends ErrorFamilia
 
