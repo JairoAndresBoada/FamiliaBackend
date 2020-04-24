@@ -21,6 +21,7 @@ val Json4sVersion        = "3.6.5"
 val quicklensVersion     = "1.4.11"
 val jodaTimeVersion      = "2.10.1"
 val scalaLogging          = "3.9.2"
+val versionAkkaCors      = "0.4.0"
 
 val exclusionAkka      = ExclusionRule("com.typesafe.akka")
 val exclusionTypelevel = ExclusionRule("org.typelevel")
@@ -32,6 +33,7 @@ lazy val mainLibs =
     "com.typesafe.akka"             %% "akka-stream"           % akkaVersion,
     "de.heikoseeberger"             %% "akka-http-circe"       % akkaHttpCirceVersion exclude ("org.typelevel", "cats-core_2.12") excludeAll (exclusionAkka),
     "com.typesafe.akka"             %% "akka-slf4j"            % akkaVersion,
+    "ch.megard"                     %% "akka-http-cors"        % versionAkkaCors,
     "org.typelevel"                 %% "cats-effect"           % catsEffectVersion exclude ("org.typelevel", "cats-core_2.12"),
     "org.typelevel"                 %% "cats-core"             % catsCoreVersion,
     "io.circe"                      %% "circe-bson"            % "0.3.1" excludeAll exclusionTypelevel,
@@ -45,8 +47,9 @@ lazy val mainLibs =
     "ch.qos.logback"                % "logback-classic"        % logBackVersion,
     "org.reactivemongo"             %% "reactivemongo"         % mongoVersion excludeAll exclusionAkka,
     "com.softwaremill.quicklens"    %% "quicklens"             % quicklensVersion,
-    "joda-time"                     %  "joda-time"               % jodaTimeVersion,
-    "com.typesafe.scala-logging" %% "scala-logging"         % scalaLogging,
+    "joda-time"                     %  "joda-time"             % jodaTimeVersion,
+    "com.typesafe.scala-logging" %% "scala-logging"            % scalaLogging,
+    
 
 
   )

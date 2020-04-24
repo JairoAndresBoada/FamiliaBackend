@@ -11,7 +11,10 @@ case class Persona (
                    fechaNacimiento: String,
                    imagen : String ,
                    descripcion : String,
-                   ciudad : String
+                   ciudad : String,
+                   edad : Option[String],
+                   profesion : Option[String],
+                   sexo: Option[String]
                    )
 
 

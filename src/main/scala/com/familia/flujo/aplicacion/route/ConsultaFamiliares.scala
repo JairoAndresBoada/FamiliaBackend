@@ -2,6 +2,7 @@ package com.familia.flujo.aplicacion.route
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Route
+import ch.megard.akka.http.cors.scaladsl.CorsDirectives.cors
 import com.familia.UUID.generarUUID
 import com.familia.flujo.Familia.EitherTask
 import com.familia.flujo.aplicacion.consultas.ConsultarFamiliares
@@ -17,7 +18,7 @@ import scala.util.{Failure, Success}
 trait ConsultaFamiliares extends ErrorAccumulatingCirceSupport with HttpRoute{
   lazy val rutaConsultaFamiliares: Route = consultarFamiliares
 
-  lazy val consultarFamiliares : Route = {
+  lazy val consultarFamiliares : Route =  cors() {
     pathPrefix("familiares") {
       get {
         implicit val correlationId: CorrelationId = CorrelationId(s"consultar Familiares $generarUUID")

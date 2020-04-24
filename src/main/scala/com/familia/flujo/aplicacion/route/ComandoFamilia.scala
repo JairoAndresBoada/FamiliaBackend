@@ -2,6 +2,7 @@ package com.familia.flujo.aplicacion.route
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Route
+import ch.megard.akka.http.cors.scaladsl.CorsDirectives.cors
 import com.familia.UUID
 import com.familia.flujo.ErrorInterno
 import com.familia.flujo.Familia.EitherTask
@@ -22,7 +23,7 @@ trait ComandoFamilia extends ErrorAccumulatingCirceSupport with HttpRoute  {
   lazy val rutaGuardarPersona: Route = guardarPersona
 
 
-  lazy val guardarPersona: Route =  {
+  lazy val guardarPersona: Route =  cors() {
     pathPrefix("familiar") {
       post {
         entity(as[Persona]) { requestPersona =>
@@ -52,7 +53,6 @@ trait ComandoFamilia extends ErrorAccumulatingCirceSupport with HttpRoute  {
             complete((StatusCodes.InternalServerError, RespuestaFallida(error.nombre, None)))
         }
       case Failure(err) =>
-        LogFamilia.logError("Ocurrió un error ejecutando el guardado del Persona", Some(err), getClass)
         LogFamilia.logError("Ocurrió un error ejecutando el guardado del Persona", Some(err), getClass)
         complete(
           (StatusCodes.InternalServerError, RespuestaFallida(ErrorInterno(nombre = err.getMessage), None))

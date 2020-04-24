@@ -15,8 +15,6 @@ package object Familia {
 
   type ErrorOr[A] = EitherT[Task, ErrorFamilia, A]
 
-
-
 }
 
 trait ErrorFamilia {
@@ -25,6 +23,10 @@ trait ErrorFamilia {
 
 case class ErrorInterno(
                          override val nombre: String = "Se ha producido un error en el servicio."
+                       ) extends ErrorFamilia
+
+case class ErrorNoExistePersona(
+                                 override val nombre: String = "No existe prospecto en el repositorio"
                        ) extends ErrorFamilia
 
 case class ErrorAlGenerarBSON(nombre : String) extends ErrorFamilia

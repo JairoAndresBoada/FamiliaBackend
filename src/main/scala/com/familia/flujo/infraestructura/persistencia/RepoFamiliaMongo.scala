@@ -85,6 +85,7 @@ def filtroPersonaPorId: String => BSONDocument = (id: String) => document("_id" 
       response
   }
 
+
   private def upsertPersona(persona: Persona, personaBson: BSONDocument)(
     implicit correlationId: CorrelationId
   ): BSONCollection => EitherTask[Persona] = { bson: BSONCollection =>

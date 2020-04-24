@@ -1,25 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\persistencia\RepoFamiliaMongo.scala:94:38: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Option[com.familia.flujo.Familia.ID][0m
-[0m[[0m[31merror[0m] [0m[0m    (which expands to)  Option[String][0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m          filtroPersonaPorId(persona._id),[0m
-[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\persistencia\RepoFamiliaMongo.scala:90:5: no type parameters for method apply: (value: F[Either[A,B]])cats.data.EitherT[F,A,B] in object EitherT exist so that it can be applied to arguments (monix.eval.Task[Nothing])[0m
-[0m[[0m[31merror[0m] [0m[0m --- because ---[0m
-[0m[[0m[31merror[0m] [0m[0margument expression's type is not compatible with formal parameter type;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : monix.eval.Task[Nothing][0m
-[0m[[0m[31merror[0m] [0m[0m required: ?F[Either[?A,?B]][0m
-[0m[[0m[31merror[0m] [0m[0m    EitherT(Task.deferFutureAction { implicit ec =>[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\persistencia\RepoFamiliaMongo.scala:90:36: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : monix.eval.Task[Nothing][0m
-[0m[[0m[31merror[0m] [0m[0m required: F[Either[A,B]][0m
-[0m[[0m[31merror[0m] [0m[0m    EitherT(Task.deferFutureAction { implicit ec =>[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\infraestructura\persistencia\RepoFamiliaMongo.scala:90:12: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : cats.data.EitherT[F,A,B][0m
-[0m[[0m[31merror[0m] [0m[0m required: com.familia.flujo.Familia.EitherTask[com.familia.flujo.dominio.Persona][0m
-[0m[[0m[31merror[0m] [0m[0m    (which expands to)  cats.data.EitherT[monix.eval.Task,com.familia.flujo.ErrorFamilia,com.familia.flujo.dominio.Persona][0m
-[0m[[0m[31merror[0m] [0m[0m    EitherT(Task.deferFutureAction { implicit ec =>[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\dominio\ServiciosPersona.scala:24:56: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : com.familia.flujo.dominio.Persona[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[com.familia.flujo.dominio.Persona][0m
+[0m[[0m[31merror[0m] [0m[0m      EitherT.right(Task.now(perso.modify(_.edad).setTo(Some(agregarEdad(perso.fechaNacimiento)))))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

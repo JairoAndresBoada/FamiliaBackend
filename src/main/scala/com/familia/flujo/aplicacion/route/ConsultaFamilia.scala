@@ -10,6 +10,7 @@ import com.familia.flujo.infraestructura.configuracion.HttpRoute
 import com.familia.flujo.logFamilia.{CorrelationId, LogFamilia}
 import de.heikoseeberger.akkahttpcirce.ErrorAccumulatingCirceSupport
 import io.circe.generic.auto._
+import ch.megard.akka.http.cors.scaladsl.CorsDirectives.cors
 
 import scala.util.{Failure, Success}
 
@@ -17,7 +18,7 @@ trait ConsultaFamilia extends ErrorAccumulatingCirceSupport with HttpRoute {
 
   lazy val rutasConcultaFamilia: Route = consultarFamiliar
 
-  lazy val consultarFamiliar : Route = {
+  lazy val consultarFamiliar : Route = cors(){
     pathPrefix("familiar" / Segment) { idFamiliar =>
       get {
         implicit val correlationId: CorrelationId = CorrelationId(s"consultar Familiar $generarUUID")
