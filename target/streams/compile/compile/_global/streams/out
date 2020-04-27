@@ -1,6 +1,8 @@
-[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\dominio\ServiciosPersona.scala:24:56: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : com.familia.flujo.dominio.Persona[0m
-[0m[[0m[31merror[0m] [0m[0m required: Option[com.familia.flujo.dominio.Persona][0m
-[0m[[0m[31merror[0m] [0m[0m      EitherT.right(Task.now(perso.modify(_.edad).setTo(Some(agregarEdad(perso.fechaNacimiento)))))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\aplicacion\route\ComandoFamilia.scala:32:52: value fechaNacimiento is not a member of object com.familia.flujo.dominio.ServiciosPersona[0m
+[0m[[0m[31merror[0m] [0m[0m          val fechaTransformada = ServiciosPersona.fechaNacimiento.replace("-" , "/")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\Proyecto_Platzi\BakendFamilia\Familia\src\main\scala\com\familia\flujo\aplicacion\route\ComandoFamilia.scala:36:49: not enough arguments for method setTo: (v: String)com.familia.flujo.dominio.Persona.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter v.[0m
+[0m[[0m[31merror[0m] [0m[0m                .modify(_.fechaNacimiento).setTo()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

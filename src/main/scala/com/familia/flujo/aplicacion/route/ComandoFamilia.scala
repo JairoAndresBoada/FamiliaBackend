@@ -3,18 +3,18 @@ package com.familia.flujo.aplicacion.route
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.server.Route
 import ch.megard.akka.http.cors.scaladsl.CorsDirectives.cors
-import com.familia.UUID
+import com.familia.UUID.generarUUID
 import com.familia.flujo.ErrorInterno
 import com.familia.flujo.Familia.EitherTask
 import com.familia.flujo.aplicacion.ACL.{RespuestaExitosa, RespuestaFallida}
 import com.familia.flujo.aplicacion.comandos.ComandoGuardarPersona
 import com.familia.flujo.dominio.Persona
 import com.familia.flujo.infraestructura.configuracion.HttpRoute
+import com.familia.flujo.infraestructura.persistencia.DecoderEncoderDomain._
 import com.familia.flujo.logFamilia.{CorrelationId, LogFamilia}
+import com.softwaremill.quicklens._
 import de.heikoseeberger.akkahttpcirce.ErrorAccumulatingCirceSupport
 import io.circe.generic.auto._
-import com.familia.flujo.infraestructura.persistencia.DecoderEncoderDomain._
-import com.softwaremill.quicklens._
 
 import scala.util.{Failure, Success}
 
@@ -31,7 +31,7 @@ trait ComandoFamilia extends ErrorAccumulatingCirceSupport with HttpRoute  {
           implicit val correlationGuardarPersona: CorrelationId = CorrelationId(s"Guardar Persona: ${requestPersona.nombres}")
           manejarRespuestaComandoPersona(
             ComandoGuardarPersona(
-              requestPersona.modify(_._id).setTo(Some(UUID.generarUUID))
+              requestPersona.modify(_._id).setToIf(requestPersona._id.isEmpty)(Some(generarUUID))
             ).ejecutarComando().run(contextoFamilia)
           )
         }

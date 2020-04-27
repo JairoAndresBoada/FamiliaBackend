@@ -14,8 +14,7 @@ import reactivemongo.api.{Cursor, ReadPreference}
 import reactivemongo.bson.{BSONDocument, document}
 
 
-
-trait RepoFamiliaMongo extends RepoFamilia with UtilidadesRepo {
+trait RepoFamiliaMongo extends RepoFamilia  with UtilidadesRepo {
 
 def filtroPersonaPorId: String => BSONDocument = (id: String) => document("_id" -> id)
 

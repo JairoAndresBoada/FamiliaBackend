@@ -26,7 +26,7 @@ case class ErrorInterno(
                        ) extends ErrorFamilia
 
 case class ErrorNoExistePersona(
-                                 override val nombre: String = "No existe prospecto en el repositorio"
+                                 override val nombre: String = "No existe la perona en el repositorio"
                        ) extends ErrorFamilia
 
 case class ErrorAlGenerarBSON(nombre : String) extends ErrorFamilia

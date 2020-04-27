@@ -22,7 +22,7 @@ trait ConsultaFamilia extends ErrorAccumulatingCirceSupport with HttpRoute {
     pathPrefix("familiar" / Segment) { idFamiliar =>
       get {
         implicit val correlationId: CorrelationId = CorrelationId(s"consultar Familiar $generarUUID")
-        println("Se va a consulta el Familiar", getClass)
+        LogFamilia.logInfo("Se va a consulta el Familiar", getClass)
         manejarRespuestaConsulta(ConsultarFamiliar(idFamiliar).ejecutarConsulta().run(contextoFamilia))
       }
     }
@@ -42,7 +42,7 @@ trait ConsultaFamilia extends ErrorAccumulatingCirceSupport with HttpRoute {
               )
             )
           case Left(error) =>
-            println(s"No se consultó el Familiar por: ${error.nombre}", None, getClass)
+            LogFamilia.logInfo(s"No se consultó el Familiar por: ${error.nombre}", None, getClass)
             complete(
               (
                 StatusCodes.InternalServerError,

@@ -29,11 +29,25 @@ object ServiciosPersona {
   }
 
   private def agregarEdad(fecha : String)(implicit correlationId: CorrelationId): String = {
+    val anio = fecha.split("-")(0)
+    val mes =  fecha.split("-")(1)
+    val dia =  fecha.split("-")(2)
+    val fechaParseada = s"${dia}/${mes}/${anio}"
+    LogFamilia.logInfo(s"la fecha que esta llegando es ${fecha}" , getClass)
     val formato: DateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy")
-    val fechaNac = LocalDate.parse(fecha, formato)
+    val fechaNac = LocalDate.parse(fechaParseada, formato)
     val ahora = LocalDate.now
     val periodo: Period = Period.between(fechaNac, ahora)
     s"${periodo.getYears} años , ${periodo.getMonths} meses y ${periodo.getDays} dias"
    }
+
+  def transformarFecha(id : String , fecha : String): String ={
+    val anio = fecha.split("-")(0)
+      val mes =  fecha.split("-")(1)
+    val dia =  fecha.split("-")(2)
+
+    s"${dia}/${mes}/${anio}"
+
+  }
 
 }

@@ -10,13 +10,13 @@ case class ConsultarFamiliar(idFamiliar : String) extends Consulta[Option[Person
   override def ejecutarConsulta()(implicit correlationId: CorrelationId): ReaderTecnico[Option[Persona]] = Reader{
     case contexto : ContextoFamilia =>
 
-      val respuestaTarifacionProspecto: EitherTask[Option[Persona]] = for {
+      val respuestaPersona: EitherTask[Option[Persona]] = for {
       personaConsultada <- contexto.repoFamilia.consultarFamiliar(idFamiliar).run(contexto)
         _ = LogFamilia.logDebug(s"La persona que se consulto es $personaConsultada" , None , getClass)
       calcularEdadPersona <- ServiciosPersona.calcularEdadesPersona(personaConsultada)
       }yield {
         calcularEdadPersona
       }
-        respuestaTarifacionProspecto
+        respuestaPersona
   }
 }
